@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 98%);
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.header {
+  background: hsl(0, 0%, 100%) !important;
+  color: hsl(200, 15%, 8%) !important;
+}
+
+.toggle__mode{
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav h3 {
+  text-transform: capitalize;
+}
+
+/* search area */
+
+.search__area {
+  margin: 50px 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.search__box1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 500px;
+}
+
+.search__box1 .search__box{
+  font-size: 1rem;
+  line-height: 1.7;
+  width: 100%;
+  padding: 15px 20px 10px 50px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.search__icon{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #aaa;
+  font-size: 19px !important;
+}
+
+
+.search__box2 .input__select {
+  width: 300px !important;
+  outline: none !important;
+  background: hsl(0, 0%, 100%) !important;
+  border: 1px solid hsl(0, 0%, 100%) !important;
+  box-shadow: none !important;
+}
+
+
+.card__text label {
+  color:  hsl(200, 15%, 8%);
+  font-weight: 600 !important;
+}
+
+.grid__flex{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__flex{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+@media screen and (max-width: 768px){
+  .header__nav h3 {
+    font-size: 0.9rem;
+  }
+
+  .header__nav {
+    padding: 0 !important;
+  }
+
+  .search__area {
+    align-items: flex-start !important;
+    flex-direction: column;
+    
+    
+     
+  }
+
+  .search__box1 {
+    width: 100%;
+    margin-bottom: 30px;
+    
+  }
+
+  .search__box2 .input__select{
+    width: 250px !important;
+  }
+}

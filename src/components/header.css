@@ -1,0 +1,20 @@
+.header {
+    background: hsl(0, 0%, 100%) !important;
+    color: hsl(200, 15%, 8%) !important;
+  }
+  
+  .toggle__mode{
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__nav h3 {
+    text-transform: capitalize;
+  }
+  

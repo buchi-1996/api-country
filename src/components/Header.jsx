@@ -8,7 +8,7 @@ function Header() {
     <AppBar position="static" className="header">
       <Toolbar>
         <Container className="header__nav">
-          <h3>where in the world?</h3>
+          <h3>Where in the world?</h3>
           <div className="toggle__mode">
             <NightsStayOutlinedIcon className="night__icon" />{" "}
             <span>Dark Mode</span>

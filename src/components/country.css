@@ -26,10 +26,10 @@
   
   .search__icon{
     position: absolute;
-    top: 20px;
+    top: 17px;
     left: 20px;
     color: #aaa;
-    font-size: 19px !important;
+    font-size: 25px !important;
   }
   
   
@@ -40,24 +40,17 @@
     border: 1px solid hsl(0, 0%, 100%) !important;
     box-shadow: none !important;
   }
-  
+
+
   
   
   @media screen and (max-width: 768px){
-    .header__nav h3 {
-      font-size: 0.9rem;
-    }
-  
-    .header__nav {
-      padding: 0 !important;
-    }
   
     .search__area {
+      margin-top:  30px;
       align-items: flex-start !important;
       flex-direction: column;
       
-      
-       
     }
   
     .search__box1 {
@@ -67,6 +60,7 @@
     }
   
     .search__box2 .input__select{
-      width: 250px !important;
+      width: 210px !important;
     }
+
   }

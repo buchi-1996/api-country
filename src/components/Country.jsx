@@ -70,7 +70,7 @@ function Country() {
             />
           </div>
           <div className="search__box2">
-            <FormControl>
+            <FormControl className="select__form">
               <Select
                 variant="outlined"
                 className="input__select"

@@ -2,7 +2,9 @@
     background: hsl(0, 0%, 100%) !important;
     color: hsl(200, 15%, 8%) !important;
   }
+
   
+
   .toggle__mode{
     display: flex;
     align-items: center;
@@ -14,7 +16,18 @@
     justify-content: space-between;
   }
   
-  .header__nav h3 {
-    text-transform: capitalize;
+
+  @media screen and (max-width: 768px){
+    .header{
+      padding: 18px 0;
+    }
+
+    .header__nav h3 {
+      font-size: 1rem;
+    }
+
+    .header__nav {
+      padding: 0 !important;
+    }
   }
   

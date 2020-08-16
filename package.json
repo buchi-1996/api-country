@@ -2,7 +2,7 @@
   "name": "countries-api-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://buchi-1996.github.io/countries-api-app",
+  "homepage": "http://buchi-1996.github.io/api-country",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

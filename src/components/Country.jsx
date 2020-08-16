@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from "react";
 import SearchIcon from "@material-ui/icons/Search";
-import NumberFormat from "react-number-format";
 import {
   FormControl,
   MenuItem,
   Select,
   Grid,
-  Card,
-  CardMedia,
   Container,
-  CardContent,
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import CountryCard  from './CountryCard';
 import "./country.css";
 
 function Country() {
@@ -95,46 +91,7 @@ function Country() {
       <Container maxWidth="lg">
         <Grid container spacing={3}>
           {filteredCountries.map((country) => {
-            return (
-              <Grid
-                item
-                key={country.name}
-                xs={12}
-                sm={6}
-                md={4}
-                lg={3}
-                className="grid__flex"
-              >
-                <Card className="card__flex">
-                  <CardMedia
-                    style={{ height: "200px" }}
-                    image={country.flag}
-                    title={country.name}
-                  />
-                  <CardContent className="card__text">
-                    <h4>
-                      <Link to="/details">{country.name}</Link>
-                    </h4>
-                    <p>
-                      <label>Population:</label>{" "}
-                      <span>
-                        <NumberFormat
-                          value={country.population}
-                          displayType={"text"}
-                          thousandSeparator={true}
-                        />
-                      </span>
-                    </p>
-                    <p>
-                      <label>Region:</label> <span>{country.region}</span>
-                    </p>
-                    <p>
-                      <label>Capital:</label> <span>{country.capital}</span>{" "}
-                    </p>
-                  </CardContent>
-                </Card>
-              </Grid>
-            );
+            return <CountryCard {...country}/>
           })}
         </Grid>
       </Container>

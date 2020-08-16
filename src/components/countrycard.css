@@ -1,0 +1,22 @@
+
+  .card__text label {
+    color:  hsl(200, 15%, 8%);
+    font-weight: 600 !important;
+  }
+  
+  .grid__flex{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .card__flex{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .card__text .link{
+    color: #222 !important;
+    text-decoration: none;
+  }
+  

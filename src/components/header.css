@@ -15,6 +15,10 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  .night__btn{
+    text-transform: capitalize !important;
+  }
   
 
   @media screen and (max-width: 768px){

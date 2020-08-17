@@ -9,10 +9,12 @@ function Header() {
       <Toolbar>
         <Container className="header__nav">
           <h3>Where in the world?</h3>
+          <Button className="night__btn">
           <div className="toggle__mode">
             <NightsStayOutlinedIcon className="night__icon" />
-            <Button>Dark Mode</Button>
+            Dark Mode
           </div>
+          </Button>
         </Container>
       </Toolbar>
     </AppBar>

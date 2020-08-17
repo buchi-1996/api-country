@@ -32,8 +32,7 @@ function CountryCard({name, flag, population, region, capital}) {
             <Link to="/details" className="link">{name}</Link>
           </h4>
           <p>
-            <label>Population:</label>
-            <span>
+            <label>Population:</label> <span>
               <NumberFormat
                 value={population}
                 displayType={"text"}

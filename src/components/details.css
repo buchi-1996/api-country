@@ -1,0 +1,77 @@
+.details__btn{
+    margin: 50px 0 !important;
+}
+
+.back__link{
+    text-decoration: none !important;
+}
+
+.right__col img{
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.left__col{
+    padding: 30px  !important;
+}
+
+.left__col h2{
+    font-size: 32px;
+    color: #333;
+    margin: 20px 0;
+}
+.country__info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.country__info__left p, .country__info__right p{
+    margin: 10px 0;
+}
+
+.country__info__left p label, .country__info__right p label{
+    font-size: 14.5px;
+    color: #444;
+    font-weight: bold;
+}
+
+.border__countries{
+    margin: 50px 0;
+}
+
+.border__countries p label{
+    font-size: 14.5px;
+    color: #444;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.border__countries p span{
+    box-shadow: 0 0 0.3em #ccc;
+    padding: 5px 20px;
+    margin: 0 3px;
+    font-size: small;
+}
+
+@media screen and (max-width: 1068px){
+
+
+    .border__countries p label{
+        display: block;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .left__col{
+        padding: 11px !important;
+    }
+
+    .country__flag{
+        height: 250px !important;
+    }
+}

@@ -10,8 +10,8 @@ function Header() {
         <Container className="header__nav">
           <h3>Where in the world?</h3>
           <div className="toggle__mode">
-            <NightsStayOutlinedIcon className="night__icon" />{" "}
-            <span>Dark Mode</span>
+            <NightsStayOutlinedIcon className="night__icon" />
+            <IconButton>Dark Mode</IconButton>
           </div>
         </Container>
       </Toolbar>

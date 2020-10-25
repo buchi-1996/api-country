@@ -7,19 +7,25 @@
   .grid__flex{
     display: flex;
     justify-content: space-evenly;
+    height: 100%;
   }
   
   .card__flex{
     display: flex;
     flex-direction: column;
     flex: 1;
+    transition: all .5s ease !important;
+  }
+
+  .card__flex:hover{
+    transform: scale(0.9);
   }
 
   .card__text h4{
     margin-bottom: 10px;
   }
 
-  .card__text .link{
+  .link{
     color: #222 !important;
     text-decoration: none;
   }

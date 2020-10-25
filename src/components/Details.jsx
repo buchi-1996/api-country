@@ -1,20 +1,35 @@
-import React from "react";
+import React from  "react";
 import {
-  FormControl,
-  MenuItem,
-  Select,
   Grid,
   Card,
   CardMedia,
   Button,
   Container,
 } from "@material-ui/core";
-import DeleteIcon from "@material-ui/icons/Delete";
 import KeyboardBackspaceIcon from "@material-ui/icons/KeyboardBackspace";
 import { Link } from "react-router-dom";
 import "./details.css";
 
 function Details() {
+  // const { name } = useParams();
+ 
+  // const [country, setCountry] = useState([]);
+  // const [border, setBorder] = useState([]);
+
+  // useEffect(() => {
+   
+  //   async function country() {
+  //     const response = await fetch(`https://restcountries.eu/rest/v2/name/${name}`);
+  //     const resData = await response.json();
+  //     console.log(resData);
+  //     setCountry(resData);
+  //     setBorder(resData.borders);
+  //   }
+
+  //   country();
+    
+  // }, [name])
+
   return (
     <Container maxWidth="lg">
       <Link to="/" className="back__link">

@@ -13,13 +13,12 @@ function App() {
   return (
     <div className="App">
      <Router>
+      <Header />
        <Switch>
-         <Route path="/details">
-         <Header />
+         <Route path="/details/:name">
            <Details />
          </Route>
          <Route path="/">
-           <Header />
            <Country />
          </Route>
        </Switch>

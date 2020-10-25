@@ -7,17 +7,34 @@ import {
   Grid,
   Container,
 } from "@material-ui/core";
+// import { Link } from "react-router-dom";
 import CountryCard  from './CountryCard';
 import "./country.css";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  root: {
+    "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#ccc"
+    },
+
+    "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#eee",
+    }
+  }
+});
 
 function Country() {
   const [Countries, setCountries] = useState([]);
   const [select, setSelect] = useState("Filter by region");
   const [Search, setSearch] = useState("");
 
+  const classes = useStyles();
+  
+
   useEffect(() => {
     async function getCountries() {
-      const response = await fetch("https://restcountries.eu/rest/v2/all");
+      const response = await fetch("https://restcountries.eu/rest/v2/all/");
       const resData = await response.json();
       const dataFile = resData.map((data) => ({
         name: data.name,
@@ -31,6 +48,7 @@ function Country() {
         currencies: data.currencies,
         subregion: data.subregion,
         topLevelDomain: data.topLevelDomain,
+        callingCodes: data.callingCodes
       }));
       console.log(resData);
       setCountries(dataFile);
@@ -65,12 +83,12 @@ function Country() {
             <input
               type="text"
               onChange={(e) => setSearch(e.target.value)}
-              className="search__box  form-control"
+              className="search__box"
               placeholder="Search for a country..."
             />
           </div>
           <div className="search__box2">
-            <FormControl className="select__form">
+            <FormControl className={classes.root}>
               <Select
                 variant="outlined"
                 className="input__select"
@@ -90,8 +108,8 @@ function Country() {
       </Container>
       <Container maxWidth="lg">
         <Grid container spacing={3}>
-          {filteredCountries.map((country) => {
-            return <CountryCard {...country}/>
+          {filteredCountries.map((country, index) => {
+            return <CountryCard key={index} {...country}/>
           })}
         </Grid>
       </Container>

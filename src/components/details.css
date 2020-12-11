@@ -41,17 +41,28 @@
     margin: 50px 0;
 }
 
-.border__countries p label{
+.border__link{
+    color: #444;
+    text-decoration: none;
+}
+
+.border__countries label{
     font-size: 14.5px;
     color: #444;
     font-weight: bold;
     margin-right: 10px;
 }
 
-.border__countries p span{
+.border__countries p{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+}
+
+.border__countries p .border{
     box-shadow: 0 0 0.3em #ccc;
     padding: 5px 20px;
-    margin: 0 3px;
+    margin: 5px 5px;
     font-size: small;
 }
 

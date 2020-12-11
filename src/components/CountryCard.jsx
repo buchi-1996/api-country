@@ -7,15 +7,15 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import NumberFormat from "react-number-format";
-// import { useParams } from 'react-router';
+
 
 
 import "./countrycard.css";
 
 
 
-function CountryCard({ name, flag, population, region, capital }) {
-
+function CountryCard({ name, flag, population, region, capital}) {
+  
   return (
     <Grid item xs={12} sm={6} md={4} lg={3}>
       <Link to={`/details/${name}`}  className="grid__flex link">

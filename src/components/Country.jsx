@@ -15,11 +15,11 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   root: {
     "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#ccc"
+      borderColor: "transparent"
     },
 
     "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#eee",
+      borderColor: "transparent",
     }
   }
 });
@@ -48,9 +48,10 @@ function Country() {
         currencies: data.currencies,
         subregion: data.subregion,
         topLevelDomain: data.topLevelDomain,
-        callingCodes: data.callingCodes
+        callingCodes: data.callingCodes,
+        alpha3Code: data.alpha3Code
       }));
-      console.log(resData);
+      // console.log(resData);
       setCountries(dataFile);
     }
 
@@ -94,6 +95,13 @@ function Country() {
                 className="input__select"
                 value={select}
                 onChange={handleChange}
+                MenuProps={{
+                  getContentAnchorEl: null,
+                  anchorOrigin: {
+                    vertical: "bottom",
+                    horizontal: "left",
+                  }
+                }}
               >
                 <MenuItem value="Filter by region">Filter by region</MenuItem>
                 <MenuItem value="Africa">Africa</MenuItem>

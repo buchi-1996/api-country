@@ -57,10 +57,10 @@ function Details() {
       <div className="description__area">
         <Grid container spacing={3}>
           <Grid item className="right-col" xs={12} md={6}>
-            <Card>
+            <Card className="des__card">
               <CardMedia
-                style={{ height: "370px" }}
-                title="country"
+                style={{ height: "50vh"}}
+                title={country.name}
                 image={country.flag}
                 className="country__flag"
               />

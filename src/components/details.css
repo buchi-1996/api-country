@@ -44,6 +44,11 @@
 .border__link{
     color: #444;
     text-decoration: none;
+    transition: .5s all;
+}
+
+.border__link:hover .border{
+    background: #fff;
 }
 
 .border__countries label{
@@ -66,6 +71,10 @@
     font-size: small;
 }
 
+.country__flag{
+    object-fit: cover;
+}
+
 @media screen and (max-width: 1068px){
 
 
@@ -82,7 +91,9 @@
         padding: 11px !important;
     }
 
+    
+
     .country__flag{
-        height: 250px !important;
+        height: 30vh !important;
     }
 }
